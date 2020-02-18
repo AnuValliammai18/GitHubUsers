@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="229dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/UserIcon"
+                android:layout_width="155dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#F8030303"
+                android:src="@drawable/user_foreground" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="196dp"
+                android:layout_height="63dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_toEndOf="@+id/UserIcon"
+                android:layout_toRightOf="@+id/UserIcon"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="User Name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/userUrl"
+                android:layout_width="378dp"
+                android:layout_height="58dp"
+                android:layout_below="@+id/userName"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-142dp"
+                android:layout_marginLeft="-142dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="18dp"
+                android:layout_toEndOf="@+id/UserIcon"
+                android:layout_toRightOf="@+id/UserIcon"
+                android:text="Url"
+                android:textSize="15sp"
+                android:autoLink="web"
+                android:linksClickable="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
